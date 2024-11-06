@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR MENU</title>
+    <!-- Bs import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Head -->
+    <h1 class="heading">Menümüz</h1>
+    <!-- Buttons -->
+    <div id="buttons" class="d-flex justify-content-center gap-3 my-4">
+        <div>
+            <label for="all">Hepsi</label>
+            <input type="radio" name="cat" id="all" checked>
+        </div>
+        <div>
+            <label for="breakfast">Kahvaltı</label>
+            <input type="radio" name="cat" id="breakfast">
+        </div>
+        <div>
+            <label for="lunch">Öğle Yemeği</label>
+            <input type="radio" name="cat" id="lunch">
+        </div>
+        <div>
+            <label for="shakes">İçecekler</label>
+            <input type="radio" name="cat" id="shakes">
+        </div>
+        <!-- sadece bir tanesinin seçilebilir olmasını aynı name değerlerini vererek sağlayabiliriz. Eğer aynı name değerini vermezsek tıklanılan seçili olur ve o şekilde kalır. name değerlerini aynı verdikten sonra tıklanılan seçili olur diğer tıklanılanılandan seçim kaldırılır. -->
+        <!-- label ile inputu birbirine bağlayabilmemiz için for değeri veriyoruz. for ve id birbiri arasındaki bağlantıyı sağladı. Yani for değerinde tutulan değerle verilen id aynı ise label a tıklandığında input da özellik alır.-->
+        <!-- ilk inputa da varsayılan olarak checked değeri veriyoruz ki sayfa yüklendiğinde seçili gelsin. -->
+    </div>
+    <!-- Menu List -->
+    <div id="menu-list">
+        <!-- kart -->
+        <!-- 
+        <a href="#" id="card" class="d-flex flex-column flex-md-row text-dark gap-3 text-decoration-none">
+            <img class="rounded shadow img-fluid" src="http://127.0.0.1:5500/images/item-2.jpeg" alt="img-2">
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h5>Diner ikili hamburger</h5>
+                    <p class="text-success fw-bold">419.70₺</p>
+                </div>
+                <p class="lead">Diner usulü hazırlanan ikili hamburgerimiz, enfes lezzeti ve
+                    doyurucu yapısıyla lunchniz için mükemmel bir tercih!
+                </p>
+            </div>
+        </a> 
+        -->
+
+        <!-- kart -->
+        <!-- 
+        <div class="border p-5 shadow">KART</div>
+        <div class="border p-5 shadow">KART</div>
+        <div class="border p-5 shadow">KART</div>
+        <div class="border p-5 shadow">KART</div>
+        <div class="border p-5 shadow">KART</div> 
+        -->
+    </div>
+
+    <!-- js connect -->
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
